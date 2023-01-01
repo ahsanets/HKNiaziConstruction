@@ -45,6 +45,40 @@ All JavaScript fuctions Start
 	 > masonry function function by = isotope.pkgd.min.js
 	 > page loader function by = custom.js
  */	
+
+
+
+
+
+
+
+/*-------------------------------------------------------------------------------------------
+    Function for SMS ans Call via Whatapp ( Right Bottom Screen )  
+--------------------------------------------------------------------------------------------*/
+
+(function () {
+	var options = {
+		sms: "+923234490004", // Sms phone number
+		call: "+923234490004", // Call phone number    
+		whatsapp: "+923234490004", // WhatsApp number
+		call_to_action: "let's Chat with Us", // Call to action
+		button_color: "#A8CE50", // Color of button
+		position: "right", // Position may be 'right' or 'left'
+		order: "sms,whatsapp", // Order of buttons
+		pre_filled_message: "Hi, May I Help you?", // WhatsApp pre-filled message 
+	};
+	var proto = 'https:', host = "getbutton.io", url = proto + '//static.' + host;
+	var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+	s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+	var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+})();
+
+
+
+
+
+
+
 /*--------------------------------------------------------------------------------------------
 	Window Scroll ALL FUNCTION START
 ---------------------------------------------------------------------------------------------*/
